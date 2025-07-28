@@ -30,6 +30,9 @@ importers:
       '@types/node':
         specifier: ^20.0.0
         version: 20.19.9
+      '@vercel/ncc':
+        specifier: ^0.38.3
+        version: 0.38.3
       ts-node:
         specifier: ^10.9.0
         version: 10.9.2(@types/node@20.19.9)(typescript@5.8.3)
@@ -258,6 +261,10 @@ packages:
 
   '@vercel/hydrogen@1.2.3':
     resolution: {integrity: sha512-sU0HWHabNxlTdKQWPMDqwr+3MqnhXc4Tvnl4i9cbdEYn5061SEKhdfpl2RhuvPByQJ8sZL8soVXFHIjFBJAR4w==}
+
+  '@vercel/ncc@0.38.3':
+    resolution: {integrity: sha512-rnK6hJBS6mwc+Bkab+PGPs9OiS0i/3kdTO+CkI8V0/VrW3vmz7O2Pxjw/owOlmo6PKEIxRSeZKv/kuL9itnpYA==}
+    hasBin: true
 
   '@vercel/next@4.10.8':
     resolution: {integrity: sha512-2con6J6uj4IAs+3SU55ZjH6flskDpi6zCRH4XmfnR0SUrsGiy6hmDbZAvfJnSHKxLFQpmP0+cn5XC+hoUAUQLg==}
@@ -1623,6 +1630,8 @@ snapshots:
     dependencies:
       '@vercel/static-config': 3.1.1
       ts-morph: 12.0.0
+
+  '@vercel/ncc@0.38.3': {}
 
   '@vercel/next@4.10.8':
     dependencies:
