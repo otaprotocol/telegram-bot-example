@@ -6,7 +6,7 @@ import { Telegraf } from 'telegraf';
 
 const client = new ActionCodesClient();
 
-const bot = new Telegraf(process.env.BOT_TOKEN!);
+export const bot = new Telegraf(process.env.BOT_TOKEN!);
 
 // Store user states for multi-step interactions
 const userStates = new Map<number, {

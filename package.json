@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "start": "ts-node bot.ts",
-    "dev": "ts-node --watch bot.ts"
+    "dev": "DEBUG=bot* dotenv -- nodemon -e ts -x ts-node src/index.ts",
+    "build": "ncc build src/index.ts -o public -m"
   },
   "keywords": [],
   "author": "",
@@ -15,8 +13,10 @@
   "packageManager": "pnpm@10.13.1",
   "dependencies": {
     "@actioncodes/sdk": "^1.2.10",
+    "@vercel/node": "^5.3.7",
     "dotenv": "^17.2.1",
-    "telegraf": "^4.16.3"
+    "telegraf": "^4.16.3",
+    "vercel": "^44.6.3"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.3",
