@@ -393,5 +393,3 @@ async function handleMessageFlow(ctx: any, userState: any, processingMsg: any) {
         await ctx.reply('❌ Failed to get signed message. Please try again.');
     }
 }
-
-bot.launch();
